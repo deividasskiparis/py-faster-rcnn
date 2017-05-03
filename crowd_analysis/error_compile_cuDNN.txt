@@ -1,0 +1,9 @@
+Maybe you can try to merge caffe master branch into caffe-fast-rcnn.
+
+cd caffe-fast-rcnn  
+git remote add caffe https://github.com/BVLC/caffe.git  
+git fetch caffe  
+git merge -X theirs caffe/master  
+Remove self_.attr("phase") = static_cast<int>(this->phase_); from include/caffe/layers/python_layer.hpp after merging.
+
+
